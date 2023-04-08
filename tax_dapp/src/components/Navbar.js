@@ -1,10 +1,12 @@
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import Connect from './Connect'
 
 const Navbar = () => {
   return (
     <div class="nav">
+      <button className='connect' onClick={()=> {<Connect/>}}>connect wallet</button>
   <input type="checkbox" id="nav-check"/>
   <div class="nav-header">
     <div class="nav-title">

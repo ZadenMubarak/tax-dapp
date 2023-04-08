@@ -28,6 +28,7 @@ const Dashboard = () => {
           <img src={logo} alt="Transparency" />
           <h2>Transparency</h2>
           <p>The blockchain provides a transparent and auditable ledger of all tax transactions, enhancing trust and confidence in the tax system.</p>
+          <button onClick={()=>{navigate("/calculate")}}>Calculate tax</button>
         </div>
       </section>
       <section className="Calculator" id="calculator">
@@ -41,10 +42,10 @@ const Dashboard = () => {
           <input type="number" name="credits" id="credits" required />
           <button type="submit" className="btn-primary">Calculate</button>
         </form>
-        <button onClick={()=>{navigate("/calculate")}}>Calculate tax</button>
+        
       </section>
       <footer>
-        <p>&copy; 2023 Tax DApp for Polkadot</p>
+        <p>&copy; 2023 Tax DApp for Solana </p>
       </footer>
     </div>
   );

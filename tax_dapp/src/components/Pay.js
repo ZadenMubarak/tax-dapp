@@ -1,22 +1,8 @@
-import { Keypair } from "@solana/web3.js"
-import BigNumber from "bignumber.js"
-
-/**
- * Simulate a checkout experience
- *
- * Recommendation:
- * `amount` and `reference` should be created in a trusted environment (server).
- * The `reference` should be unique to a single customer session,
- * and will be used to find and validate the payment in the future.
- *
- * Read our [getting started guide](#getting-started-guide) for more information on what these parameters mean.
- */
-export async function simulateCheckout() {
-  return {
-    label: "Jungle Cats store",
-    message: "Jungle Cats store - your order - #001234",
-    memo: "JC#4098",
-    amount: new BigNumber(1),
-    reference: new Keypair().publicKey
-  }
+const provider = getProvider(); // see "Detecting the Provider"
+try {
+    const resp = await provider.request({ method: "connect" });
+    console.log(resp.publicKey.toString());
+    // 26qv4GCcx98RihuK3c4T6ozB3J7L6VwCuFVc7Ta2A3Uo 
+} catch (err) {
+    // { code: 4001, message: 'User rejected the request.' }
 }
