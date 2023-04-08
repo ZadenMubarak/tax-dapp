@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
 import TaxCalculator from "./components/TaxCalculator";
 import PaymentPage from "./components/PaymentPage";
+import SettingsPage from "./components/SettingsPage";
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Dashboard/>} />
         <Route path="/calculate" element={<TaxCalculator/>} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/settings" element={<SettingsPage/>} />
       </Routes>
 
     </BrowserRouter>

@@ -26,6 +26,7 @@ const Navbar = () => {
   <div class="nav-links">
     <Link to='/calculate'> Calculate Tax </Link>
     <Link to='/payment' >Payment</Link>
+    <Link to="/settings">Settings</Link>
     <Link to='/'>Home</Link>
     
     {/* <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a> */}
